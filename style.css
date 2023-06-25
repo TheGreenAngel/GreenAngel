@@ -1,0 +1,197 @@
+body {
+    background-color: #1b1b1b;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 7%;
+    padding-right: 15%;
+}
+
+header #title {
+    font-size: 90px;
+    font-family: sans-serif;
+    color: greenyellow;
+    text-shadow: 9px 9px 10px #000;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    color: green;
+    text-shadow: 4px 4px 5px black;
+    font-size: 28px;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+.button2 {
+    color: green;
+    text-shadow: 4px 4px 5px black;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.button:hover {
+    animation-name: button;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes button {
+    from {border-bottom: solid 0px transparent;}
+    to {border-bottom: solid 1px green;}
+}
+#p1 {display: flex;}
+#p1 img {
+    padding-left: 7%;
+    margin-top: 4%;
+}
+#p1 p {
+    align-items: center;
+    color: white;
+    font-size: 43.5px;
+    font-family: 'Gruppo', sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 75px;
+    padding-top: 5%;
+}
+#sep {  
+    margin: 1.5% 7% 0 7%;
+    padding: 1px;
+    background-color: green;
+    display: flex;
+}
+
+#hackingNews span h1 {
+    font-size: 90px;
+    font-family: sans-serif;
+    color: red;
+    text-shadow: 9px 9px 10px greenyellow;
+    text-align: center;
+}
+
+#hack1 img {
+    left: 100%;
+    padding-right: 7%;
+    position: sticky;
+}
+
+#hack2 img {
+    position: sticky;
+    right: 100%;
+    padding-left: 7%;
+}
+
+#hack1 p {
+    text-align: left;
+    color: white;
+    font-size: 43.5px;
+    font-family: 'Gruppo', sans-serif;
+    position: sticky;
+    right: 100%;
+    padding-left: 7%;
+    line-height: 75px;
+    padding-top: 5%;
+}
+
+#hack2 p {
+    align-items: center;
+    color: white;
+    font-size: 43.5px;
+    font-family: 'Gruppo', sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 75px;
+    padding-top: 5%;
+}
+
+footer{
+    margin-top: 2%;
+    background-color: #000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    #p1, #hack1, #hack2 {display: block !important;}
+    #p1 #ga {
+        margin-left: 10%;
+    }
+    header #title {
+        position: sticky;
+        padding-left: 20%;
+    }
+    #p1 p, #hack1 p, #hack2 p {
+        font-size: 20px;
+        line-height: 25px;
+        margin: 20px;
+    }
+    header {
+        padding-left: 0;
+        margin-right: 0;
+    } 
+    header h1 {
+        font-size: 40px !important;
+    }
+    .button {
+        display: none;
+    }
+    /*p {display: none;}*/
+    h1 {font-size: 35px !important;}
+    img {
+        width: 270px;
+        height: 290px;
+    }
+    header #menu {
+        width: 90px !important;
+        height: 90px !important;
+        text-align: right;
+        display: block !important;
+        position: sticky;
+        margin-left: 50px;
+    }
+    #menuOpen {
+        display: none;
+        background-color: #1b1b1b;
+        float: right;
+        width: 100%;
+        height: 10%;
+        position: sticky;
+    }
+    #menuOpen h1 {
+        color: greenyellow;
+        font-family: sans-serif;
+    }
+    #menuOpen img {
+        width: 35px;
+        height: 35px;
+        float: left;
+        margin-top: 7%;
+        padding-right: 10%;
+        margin-left: 8%;
+    }
+    #hackingNews span h1 {
+        text-shadow: 0px 0px 0px transparent;
+    }
+}
+  

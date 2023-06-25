@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Green Angels</title>
+    <link href="style.css" rel="stylesheet">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gruppo&display=swap" rel="stylesheet">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Icona sito web-->
+    <link rel="icon" type="image/x-icon" href="/ga4.ico">
+</head>
+<body>
+    <div style="display: none;" id="menuOpen">
+            <img style="display: none;" id="close" src="https://icon-library.com/images/close-icon-svg/close-icon-svg-26.jpg">
+        <nav style="margin-top: 3%; margin-left:1%; text-align: center; display: block;">
+            <a class="button2" href="#">HOME</a> 
+            <a class="button2" href="#hackingNews">HACK NEWS</a> 
+            <a class="button2" href="#">CONTACT</a> <br>
+            <span id="sep"></span>
+        </nav>
+    </div>
+    <header>
+        <h1 id="title">GREEN ANGELS</h1>
+        <img style="display: none;" id="menu" src="https://icon-library.com/images/menu-icon-white-png/menu-icon-white-png-27.jpg">
+        <nav>
+            <a class="button" href="index.html">HOME</a>
+            <a class="button" href="#hackingNews">HACK NEWS</a>
+            <a class="button" href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <div id="p1">
+        <img id="ga" src="ga1.png">
+        <p>Nell'abisso digitale, dove luce e ombra si scontrano, svetta <b>l'angelo verde</b>, spirito implacabile e sovrano. Con occhi cibernetici scrutando nel buio dell'etere, che punisce i malvagi con una vendetta assai amara.</p>
+    </div>
+    
+    <span id="sep"></span>
+
+    <div id="hackingNews">
+        <span><h1><b>HACKING NEWS</b></h1></span>
+    </div>
+
+    <div style="display: flex;" id="hack1">
+        <img src="ga2.png">
+        <p><b>Green Angel</b>, violate tutte le telecamere <br>possibili presenti in <i>italia tramite uno script programmato dall'hacker stesso in linguaggio <b>python.</b></i></p>
+    </div>
+
+    <div style="display: flex;" id="hack2">
+        <img src="ga3.png">
+        <p>Oltre ad aver violato le telecamere Italiane, <b>Green Angel</b> ha hackerato anche tutte le telecamere presenti nella <i>federazione russa (non pubblicabili per ovvi motivi).</i></p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Green Angel - Tutti i diritti riservati.</p>
+        </div>
+      </footer>
+    
+      <script>
+        $(document).ready(function() {
+            $("#menu").click(function() {
+                $("#menuOpen").toggle(400);
+            });
+        });
+
+        $(document).ready(function() {
+            $("#close").click(function() {
+                $("#menuOpen").hide(300);
+            });
+        });
+
+        $(document).ready(function() {
+            $('#menuIcon').click(function() {
+                var currentSrc = $(this).attr('src');
+                var newSrc = '';
+
+                if (currentSrc === 'url_menu-icon.png') {
+                newSrc = 'url_close-icon.png';
+                } else {
+                newSrc = 'url_menu-icon.png';
+                }
+
+    $(this).attr('src', newSrc);
+  });
+});
+      </script>
+
+</body>
+</html>

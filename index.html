@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Green Angels</title>
+    <title>The Green Angel</title>
     <link href="style.css" rel="stylesheet">
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--Icona sito web-->
     <link rel="icon" type="image/x-icon" href="/ga4.ico">
+    <!--Social Class-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div style="display: none;" id="menuOpen">
@@ -23,10 +25,11 @@
         <nav style="margin-top: 3%; margin-left:1%; text-align: center; display: block;">
             <a class="button2" href="#">HOME</a> 
             <a class="button2" href="#hackingNews">HACK NEWS</a> 
-            <a class="button2" href="#">CONTACT</a> <br>
+            <a class="button2" href="#contact">CONTACT</a> <br>
             <span id="sep"></span>
         </nav>
     </div>
+
     <header>
         <h1 id="title">GREEN ANGELS</h1>
         <img style="display: none;" id="menu" src="https://icon-library.com/images/menu-icon-white-png/menu-icon-white-png-27.jpg">
@@ -58,12 +61,33 @@
         <p>Oltre ad aver violato le telecamere Italiane, <b>Green Angel</b> ha hackerato anche tutte le telecamere presenti nella <i>federazione russa (non pubblicabili per ovvi motivi).</i></p>
     </div>
 
+<span id="sep"></span>
+<div id="contact">
+    <h2 style="font-family: sans-serif; font-weight: bold; text-align: center; font-size: 30px; color: rgb(6, 234, 6); text-shadow: 4px 4px 5px green;">CONTACT</h2>
+    <div class="socials">
+        <a href="https://instagram.com/01110010_0010_01100101_0110110?igshid=MzNlNGNkZWQ4Mg==" class="fa fa-instagram"></a>
+        <a id="meta" href="https://wa.me/19296533594" class="fa fa-whatsapp"></a>
+        <a id="facebook" href="#" class="fa fa-facebook"></a>
+    </div>
+</div>
+
     <footer>
         <div class="container">
             <p>&copy; Green Angel - Tutti i diritti riservati.</p>
         </div>
       </footer>
     
+<script>
+    function handleClick() {
+  alert("Bro davvero usi facebook?");
+}
+
+// Recupera il riferimento al pulsante con ID "#facebook"
+var facebookButton = document.getElementById("facebook");
+
+// Aggiungi un event listener per il clic sul pulsante
+facebookButton.addEventListener("click", handleClick);
+</script>
       <script>
         $(document).ready(function() {
             $("#menu").click(function() {
@@ -76,21 +100,6 @@
                 $("#menuOpen").hide(300);
             });
         });
-
-        $(document).ready(function() {
-            $('#menuIcon').click(function() {
-                var currentSrc = $(this).attr('src');
-                var newSrc = '';
-
-                if (currentSrc === 'url_menu-icon.png') {
-                newSrc = 'url_close-icon.png';
-                } else {
-                newSrc = 'url_menu-icon.png';
-                }
-
-    $(this).attr('src', newSrc);
-  });
-});
       </script>
 
 </body>
